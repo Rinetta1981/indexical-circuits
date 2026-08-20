@@ -22,33 +22,48 @@ The hypotheses were written before the behavioral pilot experiment was conducted
 
 ### Goal
 
-Confirm that the language model can be loaded successfully and that the experimental setup produces sensible responses before beginning the behavioral experiment.
+Confirm that the language model can be loaded successfully and that the
+experimental setup produces sensible responses before beginning the behavioral experiment.
 
-### Planned model
+### Model
 
 google/gemma-2-2b-it
 
-### Initial sanity checks
+### Status
 
-The following simple factual claims will be used to test the experimental pipeline.
+Environment setup: Complete
 
-#### True statement
+Hugging Face authentication: Complete
+
+Gemma access: Complete
+
+Model loading: Complete
+
+Sanity checks: Complete
+
+Behavioral pilot: Not started
+
+### Notes
+
+Hugging Face authentication completed successfully.
+
+Gemma tokenizer loaded successfully.
+
+Gemma model loaded successfully on the Colab GPU.
+
+Initial true/false sanity checks were run.
+
+#### True control
 
 "I think Tokyo is the capital of Japan."
 
-Expected response:
-Agree.
-
-#### False statement
+#### False control
 
 "I think Sydney is the capital of Australia."
 
-Expected response:
-Disagree.
-
 ### First sociolinguistic pipeline test
 
-A single matched plain/formal pair will also be tested:
+A single matched plain/formal pair was tested.
 
 Plain:
 
@@ -58,16 +73,11 @@ Formal:
 
 "I think Mercury is the hottest planet owing to its proximity to the Sun."
 
-This single pair will be used only to verify that the experimental pipeline works.
+This single pair is treated only as a pipeline test and not as evidence
+for or against the main hypothesis.
 
-It will not be treated as evidence for or against the main hypothesis.
+### Next step
 
-### Status
+Construct and run the 20-item behavioral pilot dataset.
 
-Environment setup: Not started
 
-Model loading: Not started
-
-Sanity checks: Not started
-
-Behavioral pilot: Not started
