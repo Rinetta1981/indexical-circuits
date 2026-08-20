@@ -137,4 +137,41 @@ This observation is treated only as a pipeline check and not as evidence for the
 
 Run the complete 20-item behavioral pilot across both register conditions and both answer-label orders, producing 80 model measurements in total.
 
+### Full behavioral pilot
+
+The complete 20-item behavioral pilot was run using both register conditions and both answer-label orders, producing 80 model measurements.
+
+For each claim, agreement was measured using a counterbalanced logit-based agreement score. The register effect was calculated as:
+
+`formal agreement score - plain agreement score`
+
+#### False claims
+
+- Mean register effect: +2.457
+- Median register effect: +2.086
+- Positive register effects: 8 out of 10
+
+#### True claims
+
+- Mean register effect: -1.260
+- Median register effect: -0.416
+- Positive register effects: 4 out of 10
+
+The difference between the mean register effects for false and true claims was +3.717.
+
+### Preliminary interpretation
+
+In this pilot, formal-register versions of false claims generally produced higher agreement scores than their plain-register counterparts. Eight of ten false claims showed a positive register effect.
+
+The true-claim control items did not show the same pattern. Their mean register effect was negative, and only four of ten showed positive effects.
+
+This pattern is consistent with the possibility that linguistic register affects epistemic deference rather than simply producing a general increase in agreement. However, the pilot is small and exploratory, and the stimuli have not yet been independently validated for register, semantic equivalence, confidence, or other possible linguistic confounds. These results therefore should not yet be treated as evidence for a general mechanism.
+
+### Status
+
+Pilot dataset: Complete
+Behavioral data collection: Complete
+Initial descriptive analysis: Complete
+Mechanistic analysis: Not started
+
 
