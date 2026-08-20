@@ -80,4 +80,35 @@ for or against the main hypothesis.
 
 Construct and run the 20-item behavioral pilot dataset.
 
+---
+
+## Phase 2 — Behavioral Pilot
+
+### Pilot dataset
+
+A 20-item matched-pair pilot dataset was created before running the behavioral experiment.
+
+The dataset contains:
+
+- 10 false factual propositions
+- 10 true factual propositions
+- one plain-register version of each proposition
+- one formal-register version of each proposition
+
+This produces 40 experimental prompts in total.
+
+The question and answer format will be added programmatically so that it remains identical across all conditions.
+
+Dataset:
+
+`data/pilot_20.csv`
+
+### Status
+
+Pilot dataset: Complete
+
+Behavioral data collection: Not started
+
+Behavioral analysis: Not started
+
 
