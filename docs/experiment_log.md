@@ -284,4 +284,28 @@ Answer-order robustness check: Complete
 Exploratory statistical analysis: Complete
 Mechanistic analysis: Not started
 
+---
+
+## Phase 3 — Stimulus Validation
+
+### Goal
+
+Validate the linguistic manipulation before expanding the behavioral experiment or beginning mechanistic analysis.
+
+The validation will test whether formal-register variants are perceived as more formal than their matched plain-register variants while remaining closely matched for propositional meaning, assertiveness, politeness, evidential strength, and naturalness.
+
+Perceived speaker expertise or authority will also be measured as a theoretically relevant potential mediator.
+
+The validation criteria and analysis plan were documented before collecting human ratings in `docs/stimulus_validation_plan.md`.
+
+### Status
+
+Validation plan: Complete
+Validation materials: Not started
+Human ratings: Not started
+Validation analysis: Not started
+Confirmatory stimulus bank: Not started
+Confirmatory behavioral experiment: Not started
+Mechanistic analysis: Not started
+
 
