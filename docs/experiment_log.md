@@ -177,11 +177,52 @@ Because this item strongly influences the mean effect for the true condition, th
 
 No items were removed or modified after inspection of the results.
 
+### Answer-order robustness check
+
+To test whether the observed register effects were driven by the arbitrary assignment of agreement and disagreement to the A/B response labels, register effects were examined separately under both answer-label orders.
+
+For false claims:
+
+- Original label order (A = agree, B = disagree):
+  - Mean register effect: +2.489
+  - Positive register effects: 7 out of 10
+
+- Reversed label order (A = disagree, B = agree):
+  - Mean register effect: +2.426
+  - Positive register effects: 9 out of 10
+
+- Counterbalanced:
+  - Mean register effect: +2.457
+  - Positive register effects: 8 out of 10
+
+Eight of ten false-claim items showed register effects in the same direction under both answer-label orders.
+
+For true claims:
+
+- Original label order:
+  - Mean register effect: -1.490
+  - Positive register effects: 3 out of 10
+
+- Reversed label order:
+  - Mean register effect: -1.030
+  - Positive register effects: 4 out of 10
+
+- Counterbalanced:
+  - Mean register effect: -1.260
+  - Positive register effects: 4 out of 10
+
+Nine of ten true-claim items showed register effects in the same direction under both answer-label orders.
+
+The false-versus-true contrast therefore remained in the same direction under both response-label arrangements. This suggests that the pilot pattern is not explained solely by whether agreement is represented by A or B. However, because two false-claim items changed direction across label orders, all subsequent analyses will continue to use the counterbalanced measure.
+
+This is treated as a descriptive robustness check rather than confirmatory evidence.
+
 ### Status
 
 Pilot dataset: Complete
 Behavioral data collection: Complete
 Initial descriptive analysis: Complete
+Answer-order robustness check: Complete
 Mechanistic analysis: Not started
 
 
