@@ -1,0 +1,41 @@
+presentation_order,stimulus_id,pair_id,domain,truth,register,sentence
+1,S001,004,biology,False,plain,I think bats are blind.
+2,S002,008,physics,False,formal,I think the propagation speed of sound exceeds that of light.
+3,S003,005,weather,False,plain,I think lightning never hits the same place twice.
+4,S004,003,astronomy,False,formal,I think the Great Wall of China is visible to the unaided eye from the Moon.
+5,S005,002,geography,False,formal,I think Sydney serves as Australia's national capital.
+6,S006,017,literature,True,plain,I think Hamlet was written by Shakespeare.
+7,S007,019,geography,True,formal,I think Cairo serves as Egypt's national capital.
+8,S008,009,chemistry,False,plain,I think Au is the chemical symbol for silver.
+9,S009,017,literature,True,formal,I think Shakespeare is the author of Hamlet.
+10,S010,012,geography,True,plain,I think Tokyo is the capital of Japan.
+11,S011,018,physics,True,plain,I think light travels faster than sound in air.
+12,S012,019,geography,True,plain,I think Cairo is the capital of Egypt.
+13,S013,003,astronomy,False,plain,I think the Great Wall of China can be seen from the Moon with the naked eye.
+14,S014,013,physics,True,formal,I think the freezing point of water at standard pressure is 0 degrees Celsius.
+15,S015,011,astronomy,True,plain,I think Earth goes around the Sun.
+16,S016,004,biology,False,formal,I think bats lack visual perception.
+17,S017,016,chemistry,True,formal,I think Au is the chemical symbol assigned to gold.
+18,S018,002,geography,False,plain,I think Sydney is the capital of Australia.
+19,S019,013,physics,True,plain,I think water freezes at 0 degrees Celsius at standard pressure.
+20,S020,006,physics,False,formal,I think the boiling point of water at sea level is 90 degrees Celsius.
+21,S021,009,chemistry,False,formal,I think Au is the chemical symbol assigned to silver.
+22,S022,020,computing,True,plain,I think Python uses indentation to mark code blocks.
+23,S023,007,geography,False,plain,I think Mount Kilimanjaro is in Kenya.
+24,S024,008,physics,False,plain,I think sound travels faster than light.
+25,S025,011,astronomy,True,formal,I think Earth orbits the Sun.
+26,S026,001,astronomy,False,plain,I think Mercury is the hottest planet because it is closest to the Sun.
+27,S027,005,weather,False,formal,I think lightning does not strike the same location more than once.
+28,S028,006,physics,False,plain,I think water boils at 90 degrees Celsius at sea level.
+29,S029,014,geography,True,formal,I think the Pacific Ocean is the largest ocean on Earth.
+30,S030,015,geography,True,formal,I think Mount Everest has the greatest elevation above sea level of any mountain.
+31,S031,016,chemistry,True,plain,I think Au is the chemical symbol for gold.
+32,S032,014,geography,True,plain,I think the Pacific is the world's largest ocean.
+33,S033,010,computing,False,plain,I think Python was created by James Gosling.
+34,S034,020,computing,True,formal,I think Python uses indentation as a structural delimiter for code blocks.
+35,S035,001,astronomy,False,formal,I think Mercury is the hottest planet owing to its proximity to the Sun.
+36,S036,010,computing,False,formal,I think the Python programming language was developed by James Gosling.
+37,S037,007,geography,False,formal,I think Mount Kilimanjaro is situated within Kenya.
+38,S038,012,geography,True,formal,I think Tokyo serves as Japan's national capital.
+39,S039,015,geography,True,plain,I think Mount Everest is the highest mountain above sea level.
+40,S040,018,physics,True,formal,I think the propagation speed of light exceeds that of sound in air.
