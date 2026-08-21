@@ -167,6 +167,16 @@ The true-claim control items did not show the same pattern. Their mean register 
 
 This pattern is consistent with the possibility that linguistic register affects epistemic deference rather than simply producing a general increase in agreement. However, the pilot is small and exploratory, and the stimuli have not yet been independently validated for register, semantic equivalence, confidence, or other possible linguistic confounds. These results therefore should not yet be treated as evidence for a general mechanism.
 
+### Item-level inspection
+
+Item-level inspection indicated that the positive register effect among false claims was distributed across the stimulus set rather than being driven solely by one extreme item. Eight of ten false claims showed positive register effects across multiple factual domains.
+
+The true-claim controls were more heterogeneous. Four of ten showed positive effects and six showed negative effects. One chemistry item (item 16) showed an unusually large negative register effect (-10.215), shifting from a plain agreement score of +6.824 to a formal score of -3.391.
+
+Because this item strongly influences the mean effect for the true condition, the mean should not be interpreted in isolation. The median effect for true claims (-0.416) and the broader item-level distribution will also be considered.
+
+No items were removed or modified after inspection of the results.
+
 ### Status
 
 Pilot dataset: Complete
