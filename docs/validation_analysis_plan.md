@@ -90,9 +90,39 @@ A PASS pair should normally satisfy:
 5. evidential-strength difference <= 0.75 in absolute value;
 6. naturalness >= 4.5 for both variants.
 
-Pairs that narrowly miss a criterion will be classified as REVIEW rather than automatically discarded.
 
-The historical pilot stimuli will not be altered retrospectively.
+### Review and fail criteria
+
+A pair will be classified as `PASS` when all primary validation criteria are satisfied.
+
+A pair will be classified as `REVIEW` when it does not satisfy all PASS criteria but does not meet any FAIL criterion. REVIEW therefore identifies potentially usable pairs requiring linguistic inspection or revision.
+
+A pair will be classified as `FAIL` when one or more of the following substantial problems occurs:
+
+- formal-minus-plain formality difference <= 0;
+- mean semantic-equivalence rating < 5.0;
+- fewer than 60% of raters judge the pair to express the same factual proposition;
+- mean naturalness < 3.5 for either variant;
+- absolute plain-formal difference > 1.5 for assertiveness/confidence;
+- absolute plain-formal difference > 1.5 for politeness;
+- absolute plain-formal difference > 1.5 for evidential strength.
+
+Values falling between the PASS and FAIL thresholds will be classified as REVIEW.
+
+Thus, for example:
+
+- semantic equivalence >= 6.0 supports PASS;
+- semantic equivalence from 5.0 to < 6.0 produces REVIEW;
+- semantic equivalence < 5.0 produces FAIL.
+
+Likewise, an absolute control-dimension difference:
+
+- <= 0.75 supports PASS;
+- > 0.75 and <= 1.5 produces REVIEW;
+- > 1.5 produces FAIL.
+
+These thresholds are pre-specified for stimulus screening and are not inferential statistical significance thresholds.
+
 
 ## Reliability and diagnostics
 
