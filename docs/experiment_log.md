@@ -298,10 +298,32 @@ Perceived speaker expertise or authority will also be measured as a theoreticall
 
 The validation criteria and analysis plan were documented before collecting human ratings in `docs/stimulus_validation_plan.md`.
 
+### Human-rating data collection plan
+
+Two independent groups of English-proficient adult raters will be used so that exposure to the sentence-level manipulation does not influence subsequent semantic-equivalence judgments.
+
+Sentence-level validation:
+- Target: 15 usable independent raters
+- Minimum: 10 usable raters
+
+Semantic-equivalence validation:
+- Target: 15 usable independent raters
+- Minimum: 10 usable raters
+
+Participants will be adults aged 18 or above with advanced, native, or near-native proficiency in English.
+
+The two validation instruments will be administered separately. Participants in the sentence-level validation will not participate in the semantic-equivalence validation.
+
+No register labels, truth-status labels, or information about the experimental hypothesis will be shown to raters.
+
+The sentence-level form required approximately 13 minutes during technical testing. Human-rating data will not be collected until applicable institutional research-ethics requirements have been checked.
+
 ### Status
 
 Validation plan: Complete
-Validation materials: Not started
+Validation materials: Complete
+Sentence-level technical testing: Complete
+Semantic-equivalence technical testing: Complete
 Human ratings: Not started
 Validation analysis: Not started
 Confirmatory stimulus bank: Not started
