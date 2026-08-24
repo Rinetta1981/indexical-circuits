@@ -331,20 +331,41 @@ Confirmatory behavioral experiment: Not started
 Mechanistic analysis: Not started
 
 
-## Phase 4 — Confirmatory stimulus construction and validation preparation
+## Phase 4 — Confirmatory stimulus construction and human-validation preparation
 
-### Confirmatory stimulus bank
+### Rationale
 
-A stronger confirmatory stimulus architecture was constructed to address limitations of the exploratory 20-item behavioral pilot.
+The exploratory behavioral pilot produced a promising register-related effect, particularly for false claims, but the pilot had several important limitations:
 
-The confirmatory bank uses a matched 2 × 2 factual-family design:
+- the true and false claims were not matched within factual families;
+- the original stimuli had not yet undergone full human validation;
+- lexical and structural differences could contribute to the observed effects;
+- some true items may have been affected by ceiling effects;
+- the pilot sample was intentionally small and exploratory.
 
-- Truth status: true / false
-- Linguistic register: plain / formal
+A stronger confirmatory stimulus architecture was therefore developed before further language-model behavioral or mechanistic analysis.
+
+### Confirmatory 2 × 2 factual-family design
+
+The confirmatory bank independently manipulates:
+
+- truth status: true / false;
+- linguistic register: plain / formal.
+
+Each factual family contains four conditions:
+
+1. True + Plain
+2. True + Formal
+3. False + Plain
+4. False + Formal
 
 A total of 60 factual families were constructed, producing 240 candidate sentences.
 
-The bank spans 12 domains:
+The purpose of this matched-family design is to separate the effect of linguistic register from the effect of factual content and truth status more cleanly than in the exploratory pilot.
+
+### Domain coverage
+
+The 60 factual families span 12 domains:
 
 - geography: 6 families;
 - astronomy: 5;
@@ -359,76 +380,96 @@ The bank spans 12 domains:
 - language: 5;
 - art: 4.
 
-### Construction audit
+The small geography/art imbalance was retained rather than modifying otherwise satisfactory stimuli solely to obtain exact numerical symmetry.
 
-The confirmatory candidate bank was audited for:
+### Construction-level audit
+
+Candidate families were reviewed for:
 
 - semantic parallelism;
+- preservation of the same factual relation across plain and formal versions;
 - naturalness;
-- absence of added evidence;
+- absence of additional evidence or explicit credentials;
+- absence of unintended confidence or politeness manipulations;
 - register-realization diversity;
 - sentence-length balance.
 
-Final structural checks showed:
+The final construction audit showed:
 
-- 60 total families;
-- 60 unique family IDs;
-- 0 true/false length imbalances;
-- 0 families outside the preferred ±2-word plain/formal difference.
+- total factual families = 60;
+- unique family IDs = 60;
+- true/false length imbalances = 0;
+- families outside the preferred ±2-word plain/formal length difference = 0.
 
-Sentence length is treated as a construction diagnostic rather than as a definition of linguistic formality.
+Sentence length is treated as a construction diagnostic and potential confound, not as a definition of linguistic formality.
 
 ### Factual verification
 
-All 60 factual families underwent factual verification before human validation.
+All 60 factual families underwent factual verification before confirmatory human validation.
 
 No intended truth label was found to be incorrect.
 
 Five families were revised for factual precision:
 
-- F020 — photosynthesis wording;
-- F021 — Earth's outermost major layer;
-- F038 — typical human somatic cell;
-- F042 — direction of Arabic script;
-- F059 — German noun capitalization in non-initial position.
+- F020 — changed generic plant wording to a more precise photosynthesis proposition;
+- F021 — replaced potentially ambiguous "outermost solid layer" wording with "outermost major layer";
+- F038 — specified a typical human somatic cell for the chromosome-pair proposition;
+- F042 — specified Arabic script for the writing-direction proposition;
+- F059 — specified non-initial sentence position for the German capitalization proposition.
 
-The original construction bank was preserved and a separate fact-verified version was created.
+The original construction bank was preserved.
 
-After factual revisions:
+A separate fact-verified version was created for subsequent human validation.
 
-- 60 families remained;
-- 0 true/false length imbalances remained;
-- 0 families fell outside the preferred ±2-word range.
+After these factual-precision revisions:
+
+- total families remained 60;
+- unique family IDs remained 60;
+- true/false length imbalances remained 0;
+- families outside the preferred ±2-word range remained 0.
+
+### Frozen fact-verified stimulus files
+
+The following files represent the fact-verified confirmatory bank:
+
+- `data/validation/confirmatory_candidate_bank_F001_F060_verified.csv`
+- `data/validation/confirmatory_candidate_bank_F001_F060_verified_audit.csv`
+- `data/validation/factual_verification_revision_log.csv`
+
+The fact-verified bank is the version used to generate the confirmatory human-validation materials.
 
 ### Sentence-level human-validation design
 
 The 240 candidate sentences were assigned to four counterbalanced master lists.
 
-Each master list contains one sentence from each factual family.
+Each master list contains exactly one version from each of the 60 factual families.
 
-To keep participant completion time close to 15 minutes, each 60-item master list was divided into four overlapping 45-item variants.
+No participant therefore sees multiple versions from the same factual family within a form.
 
-The final validation design contains:
+To reduce participant burden and keep estimated completion time close to 15 minutes, each 60-sentence master list was divided into four overlapping 45-sentence variants.
 
-- 16 forms;
+The resulting design contains:
+
+- 4 master lists;
+- 4 variants per master list;
+- 16 validation forms in total;
 - 45 sentences per form;
-- 3 blocks of 15 sentences;
 - 45 unique factual families per form;
-- approximately 11–12 items from each experimental condition per form.
+- 3 blocks of 15 sentences per form.
 
 Structural checks confirmed:
 
-- 16 total validation variants;
-- 720 total variant-level sentence assignments;
+- 16 validation variants;
+- 720 variant-level sentence assignments;
 - 240 unique candidate stimuli;
-- every stimulus appears exactly 3 times;
+- every stimulus appears exactly 3 times across the validation design;
 - every form contains exactly 45 sentences;
 - every form contains exactly 45 unique families;
-- all 16 forms satisfy the intended 11/11/11/12 condition balance.
+- every form satisfies the intended approximately balanced 11/11/11/12 distribution across the four experimental conditions.
 
-### Sentence-level rating dimensions
+### Human rating dimensions
 
-Each candidate sentence is rated from 1–7 on:
+Each sentence is rated on six 1–7 scales:
 
 - formality;
 - assertiveness / confidence;
@@ -437,30 +478,98 @@ Each candidate sentence is rated from 1–7 on:
 - perceived expertise / authority;
 - evidential strength.
 
-### Recruitment plan
+Perceived expertise / authority is measured as a theoretically relevant candidate mediator and is not treated as synonymous with formality.
 
-The pre-specified sentence-level recruitment target is:
+The remaining dimensions provide controls for alternative explanations of any later register effect.
 
-- 5 usable participants per form;
-- 16 forms;
-- 80 usable participants total;
-- 15 independent ratings per candidate sentence.
+### Blinding
 
-Participants are allocated sequentially across the 16 variants.
+Participant-facing validation forms do not display:
 
-A response counts as usable only when the participant satisfies the eligibility criteria and completes the required rating task.
+- family IDs;
+- truth labels;
+- register labels;
+- condition labels;
+- domain labels;
+- the experimental hypothesis.
 
-Ineligible or unusable responses are replaced within the same variant.
+### Eligibility
 
-Recruitment stops separately for each variant at 5 usable responses and stops overall when all 16 variants reach that target.
+A response is eligible for inclusion only if the participant:
 
-The full procedure is documented in:
+- is 18 years of age or older;
+- reports Advanced, Near-native, or Native English proficiency;
+- provides consent;
+- has not completed another language-rating survey for this research project.
+
+The final Google Forms contain an eligibility-confirmation gate before the sentence-rating task.
+
+Participants who do not confirm eligibility do not proceed to the rating blocks.
+
+### Recruitment allocation
+
+Participants are allocated sequentially across the 16 validation variants:
+
+- A1–A4;
+- B1–B4;
+- C1–C4;
+- D1–D4.
+
+A private distribution queue is used to maintain balanced recruitment across forms.
+
+Participants receive only the form associated with their assigned allocation slot.
+
+### Pre-specified recruitment target
+
+The target is:
+
+- 5 usable participants per validation variant;
+- 16 validation variants;
+- 80 usable participants in total.
+
+Because each candidate sentence appears in exactly 3 variants:
+
+3 appearances × 5 usable raters = 15 independent ratings per candidate sentence.
+
+### Usable-response rule
+
+A response counts toward the quota only if:
+
+- the participant satisfies all eligibility criteria;
+- eligibility is confirmed;
+- the required sentence-rating task is substantially completed;
+- the required rating data are available for the presented stimuli.
+
+Ineligible or unusable responses do not count toward the five-participant quota.
+
+A replacement participant is recruited for the same variant.
+
+### Stopping rule
+
+Recruitment for an individual validation variant stops when that variant reaches 5 usable responses.
+
+Sentence-level validation recruitment stops when all 16 variants reach 5 usable responses.
+
+The planned final sentence-level validation sample is therefore 80 usable participants.
+
+### Recruitment documentation
+
+The full pre-specified recruitment, allocation, replacement, privacy, and stopping procedure is documented in:
 
 `docs/confirmatory_validation_recruitment_protocol.md`
 
-### Current status
+Operational Google Form links, private response spreadsheets, participant allocation records, and participant data are not stored in the public repository.
 
-The 60-family fact-verified candidate bank and the 16-form sentence-level validation design are frozen.
+### Current status — pre-recruitment freeze
 
-Confirmatory language-model behavioral testing will not begin until the relevant human-validation stage has been completed and screened according to the pre-specified validation criteria.
+As of 25 August 2026:
 
+- the 60-family fact-verified candidate bank is frozen;
+- the confirmatory construction audit is complete;
+- factual verification is complete;
+- the 16-form validation design is frozen;
+- the eligibility gate is implemented;
+- the recruitment allocation and stopping procedures are pre-specified;
+- confirmatory human-validation data collection has not yet begun.
+
+Confirmatory language-model behavioral testing and mechanistic tracing will not begin until the human-validation stage has been completed and the stimuli have been screened using the pre-specified validation criteria.
