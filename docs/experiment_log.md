@@ -331,3 +331,136 @@ Confirmatory behavioral experiment: Not started
 Mechanistic analysis: Not started
 
 
+## Phase 4 — Confirmatory stimulus construction and validation preparation
+
+### Confirmatory stimulus bank
+
+A stronger confirmatory stimulus architecture was constructed to address limitations of the exploratory 20-item behavioral pilot.
+
+The confirmatory bank uses a matched 2 × 2 factual-family design:
+
+- Truth status: true / false
+- Linguistic register: plain / formal
+
+A total of 60 factual families were constructed, producing 240 candidate sentences.
+
+The bank spans 12 domains:
+
+- geography: 6 families;
+- astronomy: 5;
+- chemistry: 5;
+- physics: 5;
+- biology: 5;
+- computing: 5;
+- literature: 5;
+- history: 5;
+- earth science: 5;
+- mathematics: 5;
+- language: 5;
+- art: 4.
+
+### Construction audit
+
+The confirmatory candidate bank was audited for:
+
+- semantic parallelism;
+- naturalness;
+- absence of added evidence;
+- register-realization diversity;
+- sentence-length balance.
+
+Final structural checks showed:
+
+- 60 total families;
+- 60 unique family IDs;
+- 0 true/false length imbalances;
+- 0 families outside the preferred ±2-word plain/formal difference.
+
+Sentence length is treated as a construction diagnostic rather than as a definition of linguistic formality.
+
+### Factual verification
+
+All 60 factual families underwent factual verification before human validation.
+
+No intended truth label was found to be incorrect.
+
+Five families were revised for factual precision:
+
+- F020 — photosynthesis wording;
+- F021 — Earth's outermost major layer;
+- F038 — typical human somatic cell;
+- F042 — direction of Arabic script;
+- F059 — German noun capitalization in non-initial position.
+
+The original construction bank was preserved and a separate fact-verified version was created.
+
+After factual revisions:
+
+- 60 families remained;
+- 0 true/false length imbalances remained;
+- 0 families fell outside the preferred ±2-word range.
+
+### Sentence-level human-validation design
+
+The 240 candidate sentences were assigned to four counterbalanced master lists.
+
+Each master list contains one sentence from each factual family.
+
+To keep participant completion time close to 15 minutes, each 60-item master list was divided into four overlapping 45-item variants.
+
+The final validation design contains:
+
+- 16 forms;
+- 45 sentences per form;
+- 3 blocks of 15 sentences;
+- 45 unique factual families per form;
+- approximately 11–12 items from each experimental condition per form.
+
+Structural checks confirmed:
+
+- 16 total validation variants;
+- 720 total variant-level sentence assignments;
+- 240 unique candidate stimuli;
+- every stimulus appears exactly 3 times;
+- every form contains exactly 45 sentences;
+- every form contains exactly 45 unique families;
+- all 16 forms satisfy the intended 11/11/11/12 condition balance.
+
+### Sentence-level rating dimensions
+
+Each candidate sentence is rated from 1–7 on:
+
+- formality;
+- assertiveness / confidence;
+- politeness;
+- naturalness;
+- perceived expertise / authority;
+- evidential strength.
+
+### Recruitment plan
+
+The pre-specified sentence-level recruitment target is:
+
+- 5 usable participants per form;
+- 16 forms;
+- 80 usable participants total;
+- 15 independent ratings per candidate sentence.
+
+Participants are allocated sequentially across the 16 variants.
+
+A response counts as usable only when the participant satisfies the eligibility criteria and completes the required rating task.
+
+Ineligible or unusable responses are replaced within the same variant.
+
+Recruitment stops separately for each variant at 5 usable responses and stops overall when all 16 variants reach that target.
+
+The full procedure is documented in:
+
+`docs/confirmatory_validation_recruitment_protocol.md`
+
+### Current status
+
+The 60-family fact-verified candidate bank and the 16-form sentence-level validation design are frozen.
+
+Confirmatory language-model behavioral testing will not begin until the relevant human-validation stage has been completed and screened according to the pre-specified validation criteria.
+
