@@ -1,0 +1,6 @@
+family_id,status,issue,revision,reason
+F020,REVISED_FOR_PRECISION,Generic reference to plants was broader than necessary.,Changed the proposition to photosynthesis using light versus sound.,Makes the factual contrast more precise and avoids unnecessary biological generalization.
+F021,REVISED_FOR_PRECISION,The phrase 'outermost solid layer' could create ambiguity with the lithosphere.,Changed the relation to Earth's outermost major layer.,Makes crust versus mantle the unambiguous factual contrast.
+F038,REVISED_FOR_PRECISION,The statement that humans have 23 chromosome pairs was broader than necessary.,Specified a typical human somatic cell.,Avoids exceptions involving cell types with different chromosome configurations.
+F042,REVISED_FOR_PRECISION,The wording 'Arabic is written' was broader than the intended script-direction claim.,Specified Arabic script.,Makes the right-to-left script-direction proposition explicit.
+F059,REVISED_FOR_PRECISION,The original capitalization claim did not exclude sentence-initial capitalization.,Specified non-initial sentence position in standard German.,Isolates the relevant noun-capitalization rule.
