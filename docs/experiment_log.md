@@ -573,3 +573,167 @@ As of 25 August 2026:
 - confirmatory human-validation data collection has not yet begun.
 
 Confirmatory language-model behavioral testing and mechanistic tracing will not begin until the human-validation stage has been completed and the stimuli have been screened using the pre-specified validation criteria.
+
+
+## Phase 5 — Confirmatory Behavior, Measurement Audit, and Exploratory Phenotyping
+
+### 5.1 Confirmatory behavioral experiment
+
+A stronger confirmatory experiment was conducted using 60 factual families and four conditions per family:
+
+- true_plain
+- true_formal
+- false_plain
+- false_formal
+
+This produced 240 stimuli.
+
+Behavior was measured using `google/gemma-2-2b-it`.
+
+The response interface was counterbalanced:
+
+- AB: A = agree, B = disagree
+- BA: A = disagree, B = agree
+
+The primary score was:
+
+`agreement_score = logit(AGREE) - logit(DISAGREE)`
+
+Scores were remapped according to label order and averaged across AB and BA.
+
+### 5.2 Measurement-interface correction
+
+An initial diagnostic showed that raw prompting without Gemma's official chat template assigned negligible probability mass to the bare A/B response tokens.
+
+The behavioral interface was therefore corrected before confirmatory interpretation by using Gemma's official chat template with `add_generation_prompt=True`.
+
+Under the corrected interface, A/B jointly captured more than 99% of next-token probability across all confirmatory evaluations.
+
+The confirmatory experiment was then run using this frozen corrected interface.
+
+### 5.3 Confirmatory results
+
+Mean agreement scores:
+
+- true_plain: +6.5118
+- true_formal: +6.5298
+- false_plain: -4.6221
+- false_formal: -4.2844
+
+Within-family register effects:
+
+- false formal − plain: +0.3376
+- true formal − plain: +0.0179
+- false − true interaction: +0.3197
+
+Primary interaction:
+
+- t(59) = 0.7996
+- p = .4272
+- Cohen's dz = 0.103
+- bootstrap 95% CI = [-0.4258, 1.1448]
+
+The broad hypothesis that generic formal register increases epistemic deference was therefore not supported by the stronger confirmatory design.
+
+### 5.4 Pilot bridge replication
+
+The original 20-item pilot was rerun using the corrected Gemma chat-template interface.
+
+The original pilot pattern was preserved:
+
+- false-claim register effect: +2.4574
+- true-claim register effect: -1.2598
+- false − true difference: +3.7172
+
+This indicates that the original pilot effect was not simply an artifact of the raw response interface.
+
+Instead, the discrepancy between the pilot and confirmatory experiment suggested stimulus- or register-realization dependence.
+
+### 5.5 Exploratory register-realization phenotyping
+
+The 60 confirmatory formal/plain transformations were coded using a pre-specified register-realization coding manual.
+
+The final coding should be treated as assisted exploratory linguistic coding rather than fully independently blinded coding.
+
+The coded features were:
+
+- technical lexicon
+- role/status framing
+- taxonomic/categorical framing
+- relation reframing
+- syntactic restructuring
+- nominalization
+- semantic specificity change
+
+Exploratory descriptive results for the false-claim register effect showed:
+
+- role/status framing: +2.465 mean difference relative to absence
+- nominalization: +1.778
+- taxonomic/categorical framing: +1.312
+- relation reframing: +0.727
+- technical lexicon: -0.070
+- syntactic restructuring: -0.784
+
+Technical vocabulary therefore did not explain the original pilot pattern.
+
+### 5.6 Role-relational candidate
+
+The strongest exploratory pattern occurred when BOTH:
+
+1. role/status framing was present; and
+2. relation reframing was present.
+
+For these six cases:
+
+- n = 6
+- mean false-claim register effect = +3.145
+- median = +1.412
+- positive rate = 6/6
+
+The remaining 54 families had:
+
+- mean = +0.026
+- median = +0.143
+- positive rate = 53.7%
+
+Robustness checks:
+
+- removing the largest effect: mean = +2.038; 5/5 positive
+- removing the two largest effects: mean = +0.840; 4/4 positive
+
+The pattern was not restricted to capital-city constructions:
+
+- capital-city cases: mean = +3.217; 3/3 positive
+- other role-relational cases: mean = +3.072; 3/3 positive
+
+### 5.7 Current interpretation
+
+The evidence does not support a general "formal language causes deference" claim.
+
+Instead, exploratory evidence suggests a narrower candidate phenomenon:
+
+**role-relational framing**
+
+This refers to constructions that express a proposition through role, function, status, qualification, ranking, authorship, or analogous relational framing.
+
+Examples include predicates such as:
+
+- serves as
+- functions as
+- qualifies as
+- ranks as
+- is the author of
+
+This candidate remains exploratory.
+
+No mechanistic claim is made at this stage.
+
+### 5.8 Decision
+
+The project will now proceed to a new held-out behavioral replication specifically designed to distinguish:
+
+1. plain direct predication
+2. formal lexical control
+3. role-relational framing
+
+Mechanistic localization will begin only if the role-relational behavioral effect replicates under the new pre-specified held-out design.
