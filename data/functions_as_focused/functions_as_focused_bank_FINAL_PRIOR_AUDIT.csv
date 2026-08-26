@@ -1,0 +1,121 @@
+family_id,condition,subject_keyword,subject_seen_in_prior_data,exact_overlap,max_similarity
+U001,true_formal_control,ribosome,False,False,0.5
+U001,true_functions_as,ribosome,False,False,0.5806451612903226
+U001,false_formal_control,ribosome,False,False,0.4444444444444444
+U001,false_functions_as,ribosome,False,False,0.5
+U002,true_formal_control,neuron,False,False,0.46987951807228917
+U002,true_functions_as,neuron,False,False,0.4605263157894737
+U002,false_formal_control,neuron,False,False,0.453125
+U002,false_functions_as,neuron,False,False,0.4647887323943662
+U003,true_formal_control,gallbladder,False,False,0.43356643356643354
+U003,true_functions_as,gallbladder,False,False,0.4484848484848485
+U003,false_formal_control,gallbladder,False,False,0.47368421052631576
+U003,false_functions_as,gallbladder,False,False,0.5645161290322581
+U004,true_formal_control,xylem,False,False,0.39705882352941174
+U004,true_functions_as,xylem,False,False,0.4794520547945205
+U004,false_formal_control,xylem,False,False,0.4580152671755725
+U004,false_functions_as,xylem,False,False,0.44594594594594594
+U005,true_formal_control,alveolus,False,False,0.608
+U005,true_functions_as,alveolus,False,False,0.562962962962963
+U005,false_formal_control,alveolus,False,False,0.55
+U005,false_functions_as,alveolus,False,False,0.5076923076923077
+U006,true_formal_control,myelin sheath,False,False,0.4098360655737705
+U006,true_functions_as,myelin sheath,False,False,0.4927536231884058
+U006,false_formal_control,myelin sheath,False,False,0.5109489051094891
+U006,false_functions_as,myelin sheath,False,False,0.5100671140939598
+U007,true_formal_control,red blood cell,False,False,0.6976744186046512
+U007,true_functions_as,red blood cell,False,False,0.6618705035971223
+U007,false_formal_control,red blood cell,False,False,0.42857142857142855
+U007,false_functions_as,red blood cell,False,False,0.5441176470588235
+U008,true_formal_control,chloroplast,False,False,0.4444444444444444
+U008,true_functions_as,chloroplast,False,False,0.42758620689655175
+U008,false_formal_control,chloroplast,False,False,0.4305555555555556
+U008,false_functions_as,chloroplast,False,False,0.4779874213836478
+U009,true_formal_control,thyroid gland,False,False,0.4233576642335766
+U009,true_functions_as,thyroid gland,False,False,0.4805194805194805
+U009,false_formal_control,thyroid gland,False,False,0.6363636363636364
+U009,false_functions_as,thyroid gland,False,False,0.5833333333333334
+U010,true_formal_control,stomach,False,False,0.47692307692307695
+U010,true_functions_as,stomach,False,False,0.4583333333333333
+U010,false_formal_control,stomach,False,False,0.48695652173913045
+U010,false_functions_as,stomach,False,False,0.5294117647058824
+U011,true_formal_control,router,False,False,0.3816793893129771
+U011,true_functions_as,router,False,False,0.4489795918367347
+U011,false_formal_control,router,False,False,0.40789473684210525
+U011,false_functions_as,router,False,False,0.47297297297297297
+U012,true_formal_control,Domain Name System,False,False,0.4444444444444444
+U012,true_functions_as,Domain Name System,False,False,0.5
+U012,false_formal_control,Domain Name System,False,False,0.42105263157894735
+U012,false_functions_as,Domain Name System,False,False,0.49032258064516127
+U013,true_formal_control,solid-state drive,False,False,0.4
+U013,true_functions_as,solid-state drive,False,False,0.4177215189873418
+U013,false_formal_control,solid-state drive,False,False,0.3821656050955414
+U013,false_functions_as,solid-state drive,False,False,0.4093567251461988
+U014,true_formal_control,photodiode,False,False,0.4461538461538462
+U014,true_functions_as,photodiode,False,False,0.45390070921985815
+U014,false_formal_control,photodiode,False,False,0.5076923076923077
+U014,false_functions_as,photodiode,False,False,0.48226950354609927
+U015,true_formal_control,compiler,False,False,0.421875
+U015,true_functions_as,compiler,False,False,0.4927536231884058
+U015,false_formal_control,compiler,False,False,0.4393939393939394
+U015,false_functions_as,compiler,False,False,0.49295774647887325
+U016,true_formal_control,firewall,False,False,0.39436619718309857
+U016,true_functions_as,firewall,False,False,0.46153846153846156
+U016,false_formal_control,firewall,False,False,0.4090909090909091
+U016,false_functions_as,firewall,False,False,0.4864864864864865
+U017,true_formal_control,GPU,False,False,0.4172661870503597
+U017,true_functions_as,GPU,False,False,0.4276729559748428
+U017,false_formal_control,GPU,False,False,0.40522875816993464
+U017,false_functions_as,GPU,False,False,0.5230769230769231
+U018,true_formal_control,CPU cache,False,False,0.39766081871345027
+U018,true_functions_as,CPU cache,False,False,0.4482758620689655
+U018,false_formal_control,CPU cache,False,False,0.39520958083832336
+U018,false_functions_as,CPU cache,False,False,0.4235294117647059
+U019,true_formal_control,operating system,False,False,0.40358744394618834
+U019,true_functions_as,operating system,False,False,0.4175824175824176
+U019,false_formal_control,operating system,False,False,0.44155844155844154
+U019,false_functions_as,operating system,False,False,0.4293785310734463
+U020,true_formal_control,database index,False,False,0.4
+U020,true_functions_as,database index,False,False,0.4966442953020134
+U020,false_formal_control,database index,False,False,0.40764331210191085
+U020,false_functions_as,database index,False,False,0.46153846153846156
+U021,true_formal_control,transformer,False,False,0.4444444444444444
+U021,true_functions_as,transformer,False,False,0.4827586206896552
+U021,false_formal_control,transformer,False,False,0.38666666666666666
+U021,false_functions_as,transformer,False,False,0.45
+U022,true_formal_control,fuse,False,False,0.4444444444444444
+U022,true_functions_as,fuse,False,False,0.4533333333333333
+U022,false_formal_control,fuse,False,False,0.48175182481751827
+U022,false_functions_as,fuse,False,False,0.4489795918367347
+U023,true_formal_control,thermostat,False,False,0.4583333333333333
+U023,true_functions_as,thermostat,False,False,0.5324675324675324
+U023,false_formal_control,thermostat,False,False,0.5970149253731343
+U023,false_functions_as,thermostat,False,False,0.5555555555555556
+U024,true_formal_control,voltmeter,False,False,0.4768211920529801
+U024,true_functions_as,voltmeter,False,False,0.4878048780487805
+U024,false_formal_control,voltmeter,False,False,0.583941605839416
+U024,false_functions_as,voltmeter,False,False,0.5578231292517006
+U025,true_formal_control,accelerometer,False,False,0.5769230769230769
+U025,true_functions_as,accelerometer,False,False,0.6608695652173913
+U025,false_formal_control,accelerometer,False,False,0.5636363636363636
+U025,false_functions_as,accelerometer,False,False,0.5873015873015873
+U026,true_formal_control,MEMS gyroscope,False,False,0.4752475247524752
+U026,true_functions_as,MEMS gyroscope,False,False,0.6050420168067226
+U026,false_formal_control,MEMS gyroscope,False,False,0.6730769230769231
+U026,false_functions_as,MEMS gyroscope,False,False,0.6511627906976745
+U027,true_formal_control,microphone,False,False,0.5038167938931297
+U027,true_functions_as,microphone,False,False,0.48226950354609927
+U027,false_formal_control,microphone,False,False,0.43795620437956206
+U027,false_functions_as,microphone,False,False,0.42953020134228187
+U028,true_formal_control,loudspeaker,False,False,0.42028985507246375
+U028,true_functions_as,loudspeaker,False,False,0.4370860927152318
+U028,false_formal_control,loudspeaker,False,False,0.48484848484848486
+U028,false_functions_as,loudspeaker,False,False,0.49295774647887325
+U029,true_formal_control,photovoltaic cell,False,False,0.4
+U029,true_functions_as,photovoltaic cell,False,False,0.4067796610169492
+U029,false_formal_control,photovoltaic cell,False,False,0.4
+U029,false_functions_as,photovoltaic cell,False,False,0.4235294117647059
+U030,true_formal_control,catalytic converter,False,False,0.3660130718954248
+U030,true_functions_as,catalytic converter,False,False,0.4378698224852071
+U030,false_formal_control,catalytic converter,False,False,0.3793103448275862
+U030,false_functions_as,catalytic converter,False,False,0.4523809523809524
