@@ -186,3 +186,209 @@ The project should ultimately demonstrate a complete research progression:
 **sociolinguistic hypothesis → controlled behavioral effect → internal representation → causal mechanism → generalization**
 
 The distinctive contribution of **Indexical Circuits** is to treat linguistic style not merely as an input feature, but as a possible source of socially meaningful internal computation with causal consequences for language-model behavior.
+
+
+## Updated Project Architecture After Confirmatory Testing
+
+The project now follows an evidence-gated sequence rather than assuming that the original formal-register effect is general.
+
+### Stage 1 — Exploratory pilot
+
+A 20-item pilot suggested that formal register increased agreement with false claims.
+
+Result:
+
+**Promising exploratory effect**
+
+This motivated stronger confirmatory testing.
+
+---
+
+### Stage 2 — Measurement audit
+
+The original raw A/B scoring interface was found to be unsuitable for Gemma next-token scoring.
+
+The experiment was therefore rebuilt using:
+
+- Gemma's official chat template
+- `add_generation_prompt=True`
+- AB/BA label counterbalancing
+- agreement score based on AGREE minus DISAGREE logits
+
+A/B probability mass exceeded 99% across the confirmatory experiment.
+
+Result:
+
+**Measurement interface corrected and frozen**
+
+---
+
+### Stage 3 — Pilot bridge replication
+
+The original pilot was rerun using the corrected interface.
+
+The original pattern remained.
+
+Result:
+
+**Pilot effect survives measurement correction**
+
+This indicates that the pilot result was not simply an interface artifact.
+
+---
+
+### Stage 4 — Stronger confirmatory test
+
+A new 60-family, 240-stimulus experiment tested the broader hypothesis that generic formal register increases deference.
+
+Result:
+
+**Broad generic-formality hypothesis not supported**
+
+False-claim register effect:
+
+`+0.3376`
+
+False-versus-true interaction:
+
+`+0.3197`
+
+Primary interaction:
+
+`p = .4272`
+
+The project therefore does not proceed directly to mechanistic tracing of a generic formality effect.
+
+---
+
+### Stage 5 — Exploratory linguistic phenotyping
+
+The heterogeneous confirmatory effects were analyzed using a pre-specified register-realization coding framework.
+
+The strongest descriptive pattern was associated with the combination of:
+
+- role/status framing
+- relation reframing
+
+Examples include:
+
+- serves as
+- functions as
+- qualifies as
+- ranks as
+- is the author of
+
+Among the six role-relational cases:
+
+- mean false-claim effect = +3.145
+- median = +1.412
+- positive rate = 6/6
+
+The pattern remained positive after removing the largest effects and was present outside the capital-city construction cluster.
+
+Result:
+
+**Role-relational framing identified as an exploratory candidate**
+
+This is not yet a confirmed effect.
+
+---
+
+### Stage 6 — Held-out behavioral replication
+
+Next, a completely new stimulus bank will independently test:
+
+1. plain direct predication
+2. formal lexical control
+3. role-relational framing
+
+The primary contrast will be:
+
+`false_role_relational - false_formal_control`
+
+This stage must be pre-specified before model evaluation.
+
+Result required to continue:
+
+**Robust held-out replication of the role-relational effect**
+
+---
+
+### Stage 7 — Mechanistic localization
+
+Only after successful held-out behavioral replication will the project examine where the effect is represented internally.
+
+Candidate analyses may include:
+
+- layer-wise activation comparisons
+- residual-stream differences
+- attention-pattern differences
+- probing of role-relational versus formal-control representations
+- identification of components associated with agreement shifts
+
+Goal:
+
+**Localize representations associated with the replicated behavioral effect**
+
+---
+
+### Stage 8 — Causal intervention
+
+Localization alone is not sufficient.
+
+Candidate causal tests may include:
+
+- activation patching
+- ablation
+- targeted steering
+- component suppression or replacement
+
+The key question is whether manipulating the identified internal representation changes the behavioral deference effect.
+
+Goal:
+
+**Establish causal evidence rather than correlation alone**
+
+---
+
+### Stage 9 — Generalization
+
+Any identified mechanism must then be tested on:
+
+- unseen factual domains
+- new role-relational constructions
+- new lexical realizations
+- potentially additional models
+
+Goal:
+
+**Determine whether the mechanism generalizes beyond the discovery stimuli**
+
+---
+
+## Current Evidence Gate
+
+The project currently sits between:
+
+**Stage 5: exploratory linguistic phenotyping**
+
+and
+
+**Stage 6: held-out behavioral replication**
+
+Mechanistic analysis has deliberately not begun.
+
+The current pipeline is therefore:
+
+`Pilot`
+→ `Measurement Audit`
+→ `Bridge Replication`
+→ `Controlled Confirmatory Null`
+→ `Behavioral Heterogeneity`
+→ `Linguistic Phenotyping`
+→ **`Held-Out Replication`**
+→ `Mechanistic Localization`
+→ `Causal Intervention`
+→ `Generalization`
+
+This gating structure is intended to prevent mechanistic analysis of an unstable or stimulus-specific behavioral phenomenon.
