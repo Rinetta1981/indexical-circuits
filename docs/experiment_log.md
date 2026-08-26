@@ -737,3 +737,216 @@ The project will now proceed to a new held-out behavioral replication specifical
 3. role-relational framing
 
 Mechanistic localization will begin only if the role-relational behavioral effect replicates under the new pre-specified held-out design.
+
+
+---
+
+## Phase 6 — Held-Out Role-Relational Replication
+
+A completely new 60-family held-out bank was constructed to test the
+exploratory role-relational framing hypothesis.
+
+The design contained six conditions per family:
+
+1. true plain direct
+2. true formal control
+3. true role-relational
+4. false plain direct
+5. false formal control
+6. false role-relational
+
+This produced 360 unique stimuli and 720 model evaluations after AB/BA
+counterbalancing.
+
+### Pre-model controls
+
+The frozen bank passed the following checks:
+
+- 60 unique factual families
+- 360 unique stimuli
+- 0 exact overlaps with previous stimulus banks
+- 0 previous-stimulus similarities >= .90
+- 0 formal-control role-marker contamination
+- 0 missing role markers
+
+### Primary result
+
+Preregistered comparison:
+
+`false_role_relational - false_formal_control`
+
+Result:
+
+- mean effect = +0.0904
+- median = +0.1836
+- positive rate = 58.3%
+- Cohen's dz = 0.048
+- t(59) = 0.3734
+- p = .7102
+- bootstrap 95% CI = [-0.3928, 0.5546]
+
+### Decision
+
+The preregistered role-relational replication hypothesis was not supported.
+
+The broad role-relational candidate was therefore rejected as a stable
+general explanation of false-claim deference.
+
+---
+
+## Phase 7 — Exploratory Construction-Level Analysis
+
+Because the broad role-relational effect failed, construction-level effects
+were examined descriptively.
+
+Substantial heterogeneity was observed.
+
+The most promising exploratory construction was `functions as`.
+
+For the 10 `functions as` cases:
+
+- false functions-as effect = +1.080
+- false positive rate = 8/10
+- true functions-as effect = -0.655
+- true positive rate = 2/10
+- false-minus-true interaction = +1.735
+
+Because this pattern was discovered after inspecting the held-out results, it
+was explicitly treated as exploratory.
+
+A new confirmatory replication was required before any mechanistic analysis.
+
+---
+
+## Phase 8 — Focused `functions as` Replication
+
+A focused replication was preregistered before constructing or testing the
+new model inputs.
+
+### Design
+
+- 30 completely new factual families
+- 4 conditions per family
+- 120 unique stimuli
+- AB/BA counterbalancing
+- 240 model evaluations
+
+Conditions:
+
+1. true formal control
+2. true `functions as`
+3. false formal control
+4. false `functions as`
+
+Primary hypothesis:
+
+`false_functions_as - false_formal_control > 0`
+
+Interaction hypothesis:
+
+`(false_functions_as - false_formal_control)
+-
+(true_functions_as - true_formal_control) > 0`
+
+### Stimulus provenance
+
+The candidate bank was audited against 640 previous stimulus texts.
+
+Final audit:
+
+- exact overlaps = 0
+- similarities >= .90 = 0
+- subject reuse = 0
+
+All 30 factual families were source-checked before model testing.
+
+The frozen bank SHA-256 was:
+
+`64b3fd0cc9d0cba4f650789fc0a6e7b35787352fa17b15a5592cf885db48a14e`
+
+### Interface quality control
+
+Across all 240 evaluations:
+
+- mean A/B probability mass = 0.999961
+- minimum A/B probability mass = 0.999700
+- evaluations below .99 = 0
+
+The corrected Gemma chat-template interface therefore remained valid.
+
+### Primary result
+
+False `functions as` minus formal-control effect:
+
+- mean = -0.0666
+- median = -0.0996
+- positive rate = 36.7%
+- Cohen's dz = -0.166
+- t(29) = -0.9101
+- p = .3703
+- bootstrap 95% CI = [-0.2109, 0.0717]
+
+The preregistered primary hypothesis was not supported.
+
+### Robustness
+
+Leave-one-item-out:
+
+- minimum remaining mean = -0.0957
+- maximum remaining mean = -0.0262
+- all remaining means positive = false
+
+Domain means:
+
+- biology = -0.097
+- computing = +0.271
+- engineering = -0.364
+- physics = +0.172, n = 1
+
+The result was therefore not robust across semantic domains.
+
+### Secondary truth-dependent result
+
+The true-claim `functions as` effect was:
+
+- mean = -0.3240
+- positive rate = 13.3%
+- p = 1.59e-06
+- bootstrap 95% CI = [-0.4298, -0.2255]
+
+False-minus-true interaction:
+
+- mean = +0.2574
+- median = +0.2451
+- t(29) = 3.3542
+- p = .00223
+- bootstrap 95% CI = [0.1083, 0.4073]
+
+This interaction arose primarily because `functions as` reduced agreement with
+true claims, rather than because it increased agreement with false claims.
+
+It is therefore retained only as a secondary finding requiring independent
+replication.
+
+### Preregistered decision
+
+1. Positive primary mean: FAIL
+2. Primary bootstrap CI > 0: FAIL
+3. Primary p < .05: FAIL
+4. Positive false-vs-true interaction: PASS
+5. Single-item robustness: FAIL
+6. Domain robustness: FAIL
+
+**MECHANISTIC GATE: FAIL**
+
+### Stopping decision
+
+No further behavioral narrowing will be performed.
+
+Mechanistic localization and causal intervention will not be pursued for the
+original false-claim deference hypothesis because the pre-specified behavioral
+replication gate was not satisfied.
+
+The project therefore ends the main hypothesis-testing sequence with a
+documented null replication rather than selecting only positive exploratory
+patterns.
