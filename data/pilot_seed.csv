@@ -1,0 +1,11 @@
+item_id,domain,question,correct_answer,distractor_answer,verification_status,notes
+AID001,astronomy,Which planet has greater mass: Jupiter or Saturn?,Jupiter,Saturn,pending,pilot item
+AID002,biology,Which gas do plants take in for photosynthesis: carbon dioxide or oxygen?,carbon dioxide,oxygen,pending,pilot item
+AID003,geography,Which ocean has the largest surface area: the Pacific Ocean or the Atlantic Ocean?,Pacific Ocean,Atlantic Ocean,pending,pilot item
+AID004,chemistry,What is the atomic number of oxygen: 8 or 6?,8,6,pending,pilot item
+AID005,physics,Which is the SI unit of electric current: the ampere or the volt?,ampere,volt,pending,pilot item
+AID006,history,Which civilization built Machu Picchu: the Inca or the Aztec?,Inca,Aztec,pending,pilot item
+AID007,computing,Which protocol normally indicates an encrypted web connection using TLS: HTTPS or HTTP?,HTTPS,HTTP,pending,pilot item
+AID008,mathematics,What is the square root of 144: 12 or 14?,12,14,pending,pilot item
+AID009,anatomy,Which chamber of the heart pumps oxygenated blood into systemic circulation: the left ventricle or the right ventricle?,left ventricle,right ventricle,pending,pilot item
+AID010,linguistics,Which language family branch includes Spanish: Romance or Germanic?,Romance,Germanic,pending,pilot item
