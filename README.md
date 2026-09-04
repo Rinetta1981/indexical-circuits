@@ -1,97 +1,194 @@
 # Indexical Circuits
 
-## Mechanistic Sociolinguistics of LLM Epistemic Deference
-
-**Indexical Circuits** investigates whether socially meaningful linguistic
-constructions systematically alter an LLM's epistemic judgments — and, if a
-robust behavioral effect can first be established, whether the effect can be
-traced to causal internal model mechanisms.
-
-The project combines sociolinguistic analysis with controlled behavioral
-experimentation and a pre-specified evidence gate for mechanistic
-interpretability.
+## A replication-first study of sociolinguistic cues and epistemic judgment in language models
 
 **Model:** `google/gemma-2-2b-it`
 
-**Current stage:** behavioral replication sequence completed. The final
-preregistered primary hypothesis was not supported, so the pre-specified
-mechanistic gate remains closed.
+**Study status: behavioral replication sequence complete; mechanistic gate closed.**
+
+Indexical Circuits asks whether socially meaningful linguistic
+constructions systematically alter a language model's epistemic judgments
+when factual content is held constant.
+
+The project was designed with a pre-specified evidence gate:
+
+**mechanistic localization would begin only if the behavioral effect first
+replicated robustly.**
+
+That condition was not met.
+
+The project therefore stops before making claims about an "authority
+circuit", an "indexical circuit", or another causal internal mechanism.
 
 ---
 
-## Research Question
+## Executive summary
 
-Can the linguistic form of a proposition change an LLM's willingness to
-endorse it even when the underlying factual claim is held constant?
+An exploratory pilot suggested that formal linguistic framing strongly
+increased Gemma-2-2B-IT's agreement with false claims.
 
-The project originally tested whether **formal register** generally increases
-epistemic deference.
+That apparent effect survived an important measurement-interface
+correction, motivating stronger tests.
 
-A stronger confirmatory experiment did not support that broad hypothesis.
+But the effect did not survive increasingly controlled independent
+replication.
 
-Subsequent exploratory analyses identified progressively narrower candidates,
-first **role-relational framing** and later the specific construction
-**`functions as`**. Both were subjected to new held-out testing.
+The research sequence was:
 
-Neither produced a replicated positive effect on agreement with false claims.
+**Pilot**
 
-The final focused replication instead revealed an unexpected truth-dependent
-pattern: `functions as` reliably reduced agreement with true claims while
-showing no reliable increase in agreement with false claims.
+→ **Measurement audit**
+
+→ **Broad confirmatory null**
+
+→ **Exploratory linguistic phenotyping**
+
+→ **Held-out role-relational null**
+
+→ **Exploratory `functions as` candidate**
+
+→ **Preregistered focused replication**
+
+→ **Primary null / mechanistic gate closed**
+
+The strongest methodological conclusion is:
+
+> Before explaining an apparent model behavior mechanistically, first
+> establish that the behavior itself is reproducible.
+
+The project preserves the complete path from apparently strong signal to
+falsification rather than selecting only the positive stages.
 
 ---
 
-## Current Empirical Status
+## Key results
 
-### 1. Initial pilot
+| Stage | Primary result |
+| --- | --- |
+| Initial exploratory pilot | False-claim formal-minus-plain effect: `+2.4574` |
+| Measurement audit | A/B probability mass >99% after correcting the interface |
+| Broad confirmatory experiment | `t(59) = 0.7996`, `p = .4272` |
+| Held-out role-relational replication | `t(59) = 0.3734`, `p = .7102` |
+| Focused preregistered `functions as` replication | `t(29) = -0.9101`, `p = .3703` |
+| Mechanistic evidence gate | **Closed** |
+| Secondary truth-dependent interaction | `t(29) = 3.3542`, `p = .00223`; requires independent replication |
 
-A 20-item exploratory pilot produced a substantial apparent register effect for
-false claims.
+The original hypothesis that linguistic formality reliably increases
+agreement with false claims was not supported.
+
+The later role-relational hypothesis also failed held-out replication.
+
+The focused `functions as` hypothesis likewise failed its preregistered
+primary test.
+
+A secondary truth-dependent interaction appeared in the final focused
+study, but it was driven primarily by **reduced agreement with true
+claims**, not by reliably increased agreement with false claims.
+
+That secondary finding is reported as hypothesis-generating rather than
+as a rescue of the original theory.
+
+---
+
+## Effect trajectory
+
+The apparent false-claim effect became progressively weaker as the tests
+became more independent and more tightly controlled.
+
+![Effect trajectory](assets/figures/figure_1_effect_trajectory_PORTFOLIO.png)
+
+This trajectory is central to the project.
+
+A strong-looking pilot effect was not sufficient evidence for a stable
+behavioral phenomenon.
+
+---
+
+## Research question
+
+Can the linguistic form of a proposition alter a language model's
+willingness to endorse it even when the underlying factual claim is held
+constant?
+
+The project began with a broad hypothesis:
+
+**formal register may increase epistemic deference.**
+
+After that hypothesis failed confirmatory testing, exploratory linguistic
+phenotyping asked whether the effect might instead depend on more specific
+sociolinguistic structures such as:
+
+- technical lexicality;
+- role and status framing;
+- relational reframing;
+- taxonomic framing;
+- syntactic restructuring;
+- nominalization;
+- semantic specificity.
+
+This produced narrower candidate hypotheses, each of which was then
+tested using new held-out material rather than being treated as confirmed
+from the exploratory data that generated it.
+
+---
+
+## 1. Exploratory pilot
+
+A 20-item exploratory pilot produced a substantial apparent register
+effect on false claims.
 
 False-claim formal-minus-plain effect:
 
 `+2.4574`
 
-This initial signal motivated a stronger experimental design.
+The size of the apparent signal justified a more careful measurement
+audit before scaling the experiment.
 
 ---
 
-### 2. Measurement audit
+## 2. Measurement-interface audit
 
-A diagnostic analysis showed that raw A/B next-token scoring was inappropriate
-for Gemma because bare A/B tokens received negligible probability mass without
-the model's expected conversational formatting.
+The initial experiment used raw A/B next-token scoring.
 
-The experiment was therefore rebuilt using Gemma's official chat template and
-AB/BA label-order counterbalancing.
+A diagnostic audit showed that this was not an appropriate measurement
+interface for Gemma-2-2B-IT: bare A/B tokens received negligible
+probability mass without the conversational formatting expected by the
+instruction-tuned model.
 
-Under the corrected interface, A/B jointly captured more than 99% of
-next-token probability.
+The experiment was therefore rebuilt using:
 
-The original pilot signal survived this interface correction, justifying a
-larger confirmatory experiment.
+- Gemma's official chat template;
+- AB/BA response-label counterbalancing.
+
+Under the corrected interface, the A/B alternatives jointly captured
+more than 99% of next-token probability.
+
+Importantly, the original pilot signal survived this correction.
+
+The project therefore did not dismiss the pilot as a measurement artifact;
+it proceeded to an independent confirmatory experiment.
 
 ---
 
-### 3. Broad confirmatory experiment
+## 3. Broad confirmatory experiment
 
-A new experiment used:
+The confirmatory experiment used:
 
-- 60 factual families
-- 240 stimuli
-- true and false claims
-- plain and formal realizations
-- AB/BA counterbalanced scoring
+- 60 factual families;
+- 240 unique stimuli;
+- true and false claims;
+- plain and formal realizations;
+- AB/BA counterbalanced scoring.
 
-The broad formal-register hypothesis did **not** replicate.
+The broad formal-register hypothesis did not replicate.
 
-Condition means showed:
+Observed effects:
 
-- false formal-minus-plain effect: `+0.3376`
-- true formal-minus-plain effect: `+0.0179`
-- false-minus-true interaction: `+0.3197`
+- false formal-minus-plain: `+0.3376`;
+- true formal-minus-plain: `+0.0179`;
+- false-minus-true interaction: `+0.3197`.
 
-Primary statistical test:
+Primary test:
 
 `t(59) = 0.7996, p = .4272`
 
@@ -104,441 +201,439 @@ deference-inducing feature.
 
 ---
 
-### 4. Exploratory linguistic phenotyping
+## 4. Exploratory linguistic phenotyping
 
-The heterogeneous register transformations were subsequently coded for
-linguistic properties including:
+The heterogeneous register transformations were coded for more specific
+linguistic properties.
 
-- technical lexicality
-- role/status framing
-- relation reframing
-- taxonomic framing
-- syntactic restructuring
-- nominalization
-- semantic specificity
-
-Technical vocabulary showed essentially no association with the false-claim
-effect:
+Technical lexicality showed essentially no association with the
+false-claim effect:
 
 `technical lexicon present - absent = -0.070`
 
-The strongest descriptive pattern instead occurred when **role/status framing
-and relation reframing occurred together**.
+The strongest descriptive pattern instead appeared when role/status
+framing and relation reframing occurred together.
 
-Examples included constructions such as:
+Examples included:
 
-- `serves as`
-- `functions as`
-- `qualifies as`
-- `ranks as`
-- `is the author of`
+- `serves as`;
+- `functions as`;
+- `qualifies as`;
+- `ranks as`;
+- `is the author of`.
 
-For the six exploratory role-relational cases:
+For six exploratory role-relational cases:
 
-- mean effect: `+3.145`
-- median effect: `+1.412`
-- positive cases: `6/6`
+- mean effect: `+3.145`;
+- median effect: `+1.412`;
+- positive cases: `6/6`.
 
 After removing the two largest effects:
 
-- mean effect: `+0.840`
-- positive cases: `4/4`
+- mean effect: `+0.840`;
+- positive cases: `4/4`.
 
-This pattern was treated explicitly as **exploratory**, not as a confirmed
-effect.
+This pattern was explicitly treated as exploratory.
+
+It generated a new hypothesis rather than being presented as evidence
+that the hypothesis was already true.
 
 ---
 
-### 5. Held-out role-relational replication
+## 5. Held-out role-relational replication
 
-A completely new 60-family held-out bank was constructed to test the
-role-relational hypothesis.
+A completely new 60-family stimulus bank was constructed.
 
 Each factual family contained six conditions:
 
-1. true plain direct
-2. true formal control
-3. true role-relational
-4. false plain direct
-5. false formal control
-6. false role-relational
+1. true plain direct;
+2. true formal control;
+3. true role-relational;
+4. false plain direct;
+5. false formal control;
+6. false role-relational.
 
 This produced:
 
-- 60 factual families
-- 360 unique stimuli
-- 720 model evaluations after AB/BA counterbalancing
+- 60 factual families;
+- 360 unique stimuli;
+- 720 model evaluations after AB/BA counterbalancing.
 
-The frozen bank was audited against previous experimental materials before
-model testing:
+Before model testing, the frozen bank was audited against previous
+experimental material.
 
-- exact prior overlaps: `0`
-- prior similarities >= .90: `0`
-- formal-control role contamination: `0`
-- missing role markers: `0`
+The audit found:
+
+- exact previous overlaps: `0`;
+- previous similarities >= `.90`: `0`;
+- formal-control role contamination: `0`;
+- missing role markers: `0`.
 
 The preregistered primary comparison was:
 
 `false_role_relational - false_formal_control`
 
-The result was:
+Observed result:
 
-- mean effect: `+0.0904`
-- median: `+0.1836`
-- positive rate: `58.3%`
-- Cohen's dz: `0.048`
-- `t(59) = 0.3734`
-- `p = .7102`
-- bootstrap 95% CI: `[-0.3928, 0.5546]`
+- mean effect: `+0.0904`;
+- median: `+0.1836`;
+- positive rate: `58.3%`;
+- Cohen's dz: `0.048`;
+- `t(59) = 0.3734`;
+- `p = .7102`;
+- bootstrap 95% CI: `[-0.3928, 0.5546]`.
 
-The broad role-relational hypothesis was therefore **not supported**.
+The broad role-relational hypothesis was not supported.
 
 ---
 
-### 6. Construction-level heterogeneity
+## 6. Construction-level heterogeneity
 
 Exploratory decomposition of the held-out results showed substantial
 construction-specific heterogeneity.
 
-The most promising apparent pattern occurred for the `functions as`
-construction.
+![Construction-level heterogeneity](assets/figures/figure_2_construction_heterogeneity_PORTFOLIO.png)
+
+The most promising apparent pattern occurred for the specific
+construction:
+
+`functions as`
 
 For the 10 exploratory `functions as` cases:
 
-- false role-minus-formal effect: `+1.080`
-- false positive rate: `8/10`
-- true role-minus-formal effect: `-0.655`
-- true positive rate: `2/10`
-- false-minus-true interaction: `+1.735`
+- false role-minus-formal effect: `+1.080`;
+- false positive rate: `8/10`;
+- true role-minus-formal effect: `-0.655`;
+- true positive rate: `2/10`;
+- false-minus-true interaction: `+1.735`.
 
-This appeared to fit the hypothesized pattern particularly well: the
-construction seemed to increase agreement with false propositions while
-moving true propositions in the opposite direction.
+Because this pattern was discovered after inspecting construction-level
+results, it was treated as a new exploratory finding.
 
-Because this pattern was identified **after inspecting construction-level
-results**, it was treated as a new exploratory finding requiring an entirely
-new confirmatory replication.
+A new confirmatory dataset was required.
 
 ---
 
-### 7. Focused preregistered `functions as` replication
+## 7. Focused preregistered `functions as` replication
 
-A final focused replication was preregistered before model testing.
+The final study used a new preregistered focused replication.
 
-The design used:
+Design:
 
-- 30 completely new factual families
-- 4 conditions per family
-- 120 unique stimuli
-- AB/BA counterbalanced scoring
-- 240 total model evaluations
+- 30 completely new factual families;
+- 4 conditions per family;
+- 120 unique stimuli;
+- AB/BA counterbalanced scoring;
+- 240 total model evaluations.
 
-Conditions were:
+Conditions:
 
-1. `true_formal_control`
-2. `true_functions_as`
-3. `false_formal_control`
-4. `false_functions_as`
+1. `true_formal_control`;
+2. `true_functions_as`;
+3. `false_formal_control`;
+4. `false_functions_as`.
 
 The primary hypothesis was:
 
 `false_functions_as - false_formal_control > 0`
 
-The crucial truth-dependent contrast was:
+The truth-dependent contrast was:
 
 `(false_functions_as - false_formal_control) - (true_functions_as - true_formal_control)`
 
 ### Stimulus provenance
 
 Before model testing, the focused bank was checked against all previous
-experimental materials.
+experimental material.
 
 The final audit found:
 
-- previous stimulus texts checked: `640`
-- exact overlaps: `0`
-- similarities >= .90: `0`
-- reused subject families: `0`
+- previous stimulus texts checked: `640`;
+- exact overlaps: `0`;
+- similarities >= `.90`: `0`;
+- reused subject families: `0`.
 
-The 30 families were source-checked before model testing and the final bank was
-frozen.
+The 30 families were also source-checked before model testing.
 
-Its SHA-256 fingerprint is:
+The frozen dataset fingerprint is:
 
 `64b3fd0cc9d0cba4f650789fc0a6e7b35787352fa17b15a5592cf885db48a14e`
 
-The fingerprint allows the exact model input to be verified independently.
+### Primary result
 
-### Primary focused result
-
-The preregistered primary hypothesis was **not supported**.
+The preregistered primary hypothesis was not supported.
 
 False `functions as` minus formal-control effect:
 
-- mean: `-0.0666`
-- median: `-0.0996`
-- positive rate: `36.7%`
-- Cohen's dz: `-0.166`
-- `t(29) = -0.9101`
-- `p = .3703`
-- bootstrap 95% CI: `[-0.2109, 0.0717]`
+- mean: `-0.0666`;
+- median: `-0.0996`;
+- positive rate: `36.7%`;
+- Cohen's dz: `-0.166`;
+- `t(29) = -0.9101`;
+- `p = .3703`;
+- bootstrap 95% CI: `[-0.2109, 0.0717]`.
 
-The effect was therefore neither positive nor statistically distinguishable
-from zero.
+Leave-one-item-out analyses also failed the preregistered robustness
+criterion.
 
-Leave-one-item-out analyses also failed the preregistered robustness criterion.
+Domain-level estimates changed direction:
 
-Domain-level results were heterogeneous:
+- biology: `-0.097`;
+- computing: `+0.271`;
+- engineering: `-0.364`;
+- physics: `+0.172` (`n = 1`).
 
-- biology: `-0.097`
-- computing: `+0.271`
-- engineering: `-0.364`
-- physics: `+0.172` (`n = 1`)
-
-Removing different semantic domains changed the direction of the overall
-effect.
-
-Accordingly, the apparent `functions as` false-claim effect observed in the
-earlier exploratory subset did **not replicate**.
-
----
-
-## Unexpected Truth-Dependent Effect
-
-Although the primary hypothesis failed, the focused replication revealed an
-unexpected truth-dependent pattern.
-
-For **true claims**, `functions as` reliably reduced agreement relative to the
-matched formal control:
-
-- mean effect: `-0.3240`
-- positive rate: `13.3%`
-- `p = 1.59e-06`
-- bootstrap 95% CI: `[-0.4298, -0.2255]`
-
-This produced a positive false-minus-true interaction:
-
-- mean interaction: `+0.2574`
-- median interaction: `+0.2451`
-- `t(29) = 3.3542`
-- `p = .00223`
-- bootstrap 95% CI: `[0.1083, 0.4073]`
-
-This interaction does **not** rescue the original hypothesis.
-
-It arose primarily because functional-role wording reduced agreement with
-true claims, not because it reliably increased agreement with false claims.
-
-The truth-dependent effect is therefore reported as a **secondary finding
-requiring independent replication**, rather than as evidence for the original
-epistemic-deference hypothesis.
-
----
-
-## Evidence Gate
-
-The project deliberately separates behavioral discovery from mechanistic
-interpretation.
-
-The completed research sequence is:
-
-`Pilot`
-
-→ `Measurement Audit`
-
-→ `Broad Confirmatory Null`
-
-→ `Linguistic Phenotyping`
-
-→ `Exploratory Role-Relational Candidate`
-
-→ `Held-Out Role-Relational Null`
-
-→ `Exploratory functions-as Candidate`
-
-→ `Preregistered Focused Replication`
-
-→ **`Primary Null / Mechanistic Gate Failed`**
-
-Mechanistic localization was pre-specified to begin only if a robust
-behavioral effect replicated.
-
-The focused replication failed that criterion.
-
-Mechanistic localization and causal intervention were therefore
-**intentionally not pursued**.
-
-No claim about an "authority circuit", "indexical circuit", or other causal
-internal mechanism is made.
-
----
-
-## What the Project Shows
-
-The central result of Indexical Circuits is methodological as much as
-behavioral.
-
-A linguistically plausible LLM effect can appear substantial in a pilot or
-small exploratory subset and yet disappear when subjected to stronger,
-independent testing.
-
-The project documents the complete trajectory from apparent signal to
-falsification rather than selecting only positive findings.
-
-It demonstrates:
-
-- explicit measurement-interface validation
-- AB/BA label-order counterbalancing
-- separation of exploratory and confirmatory analyses
-- increasingly controlled held-out stimulus construction
-- prior-data contamination audits
-- factual source verification before model testing
-- frozen stimulus banks
-- cryptographic stimulus fingerprints
-- preregistered hypotheses
-- pre-specified success criteria
-- bootstrap uncertainty estimation
-- item-level robustness testing
-- semantic-domain robustness testing
-- explicit stopping rules
-- refusal to infer a mechanism from an effect that did not replicate
-
-The project therefore illustrates an important methodological principle for
-LLM interpretability:
-
-> **Before explaining an apparent model behavior mechanistically, first
-> establish that the behavior itself is reproducible.**
-
----
-
-
-## Visual Summary
-
-### Effect trajectory
-
-![Effect trajectory](assets/figures/figure_1_effect_trajectory_PORTFOLIO.png)
-
-*The apparent false-claim effect shrinks across progressively stronger tests: from an exploratory pilot to confirmatory, held-out, and preregistered focused replication.*
-
-### Construction-level heterogeneity
-
-![Construction heterogeneity](assets/figures/figure_2_construction_heterogeneity_PORTFOLIO.png)
-
-*The broad role-relational category concealed substantial construction-level heterogeneity. The exploratory `functions as` subset looked promising, but other constructions moved in different directions.*
-
-### Focused replication
+The apparent exploratory `functions as` false-claim effect therefore did
+not replicate.
 
 ![Focused replication](assets/figures/figure_3_focused_replication_PORTFOLIO.png)
 
-*The preregistered primary `functions as` effect on false claims did not replicate. A secondary truth-dependent contrast remained, driven mainly by reduced agreement with true claims.*
+---
 
-### Domain robustness
+## Secondary truth-dependent effect
+
+Although the primary hypothesis failed, the focused replication produced
+an unexpected truth-dependent pattern.
+
+For true claims, `functions as` reduced agreement relative to the matched
+formal control:
+
+- mean effect: `-0.3240`;
+- positive rate: `13.3%`;
+- `p = 1.59e-06`;
+- bootstrap 95% CI: `[-0.4298, -0.2255]`.
+
+This yielded a positive false-minus-true interaction:
+
+- mean interaction: `+0.2574`;
+- median interaction: `+0.2451`;
+- `t(29) = 3.3542`;
+- `p = .00223`;
+- bootstrap 95% CI: `[0.1083, 0.4073]`.
+
+This finding does **not** rescue the original epistemic-deference
+hypothesis.
+
+The interaction arose primarily because functional-role wording reduced
+agreement with true claims, not because it reliably increased agreement
+with false claims.
+
+It is therefore retained as a secondary finding requiring independent
+replication.
+
+---
+
+## Robustness across semantic domains
+
+The focused primary effect was not stable across semantic domains.
 
 ![Domain robustness](assets/figures/figure_4_domain_robustness_PORTFOLIO.png)
 
-*The focused false-claim effect changed direction across semantic domains, failing the preregistered robustness criterion.*
+Removing different domains changed the sign of the aggregate effect.
+
+This was another reason the preregistered robustness criterion was not
+met.
 
 ---
 
-## Why This Matters
+## Evidence gate
 
-Most work on LLM behavior treats linguistic variation primarily as changes in
-wording or style.
+The project deliberately separates:
 
-This project asks whether socially meaningful linguistic constructions can
-systematically change model epistemic behavior — but it also asks a prior
-methodological question:
+**behavioral discovery**
 
-> **Which apparent linguistic effects survive strong replication?**
+from:
 
-The results show why this distinction matters.
+**mechanistic interpretation**
 
-Effects that appeared substantial in exploratory subsets weakened or
-disappeared under newly constructed, counterbalanced, source-verified,
-held-out tests.
+Mechanistic localization was pre-specified to begin only if a robust
+behavioral phenomenon survived replication.
 
-This has implications for both sociolinguistic research on language models and
-mechanistic interpretability.
+The final focused primary hypothesis failed that criterion.
 
-Without rigorous behavioral replication, researchers risk mechanistically
-explaining patterns that are unstable, stimulus-specific, or artifacts of
-experimental design.
+Therefore:
 
-The broader contribution of Indexical Circuits is therefore to connect
-sociolinguistic concepts such as register, relational construal, stance, and
-indexical meaning with rigorous experimental practices for distinguishing
-robust LLM behavior from unstable apparent effects.
+**Mechanistic gate: closed**
 
----
+**Mechanistic localization: intentionally not pursued**
 
-## Repository Structure
+**Causal mechanism: not established**
 
-`notebooks/` — behavioral experiments and analyses
+No claim is made that the model contains an:
 
-`data/` — stimuli, validation materials, linguistic coding, and frozen
-held-out banks
+- authority circuit;
+- indexical circuit;
+- epistemic-deference circuit;
+- causal sociolinguistic feature corresponding to the exploratory effects.
 
-`data/functions_as_focused/` — frozen 30-family focused replication bank,
-prior-data audit, and source-verification log
-
-`results/confirmatory/` — confirmatory behavioral outputs
-
-`results/phenotyping/` — exploratory linguistic phenotyping outputs
-
-`results/functions_as_focused/` — complete outputs from the preregistered
-focused replication
-
-`docs/` — hypotheses, preregistrations, experiment log, coding manual,
-validation plans, and project architecture
+This stopping decision is part of the study design rather than an
+unfinished stage of the project.
 
 ---
 
-## Scientific Status
+## Why the negative result matters
 
-The behavioral replication sequence is complete.
+A large exploratory effect can be tempting to explain mechanistically.
 
-**Initial pilot signal:** observed
+But if the effect is unstable, stimulus-specific, or measurement-dependent,
+a mechanistic analysis may produce an explanation for a pattern that does
+not generalize.
 
-**Measurement-interface correction:** completed; pilot signal survived
+Indexical Circuits therefore treats behavioral replication as a
+precondition for causal interpretation.
 
-**Broad generic-formality effect:** not supported
+The project demonstrates several safeguards:
 
-**Technical-lexicality explanation:** not supported
-
-**Exploratory role-relational candidate:** identified
-
-**Held-out role-relational replication:** primary hypothesis not supported
-
-**Exploratory `functions as` candidate:** identified
-
-**Preregistered focused `functions as` replication:** primary hypothesis not
-supported
-
-**False-claim `functions as` effect:** not replicated
-
-**Truth-dependent `functions as` interaction:** observed as a secondary finding
-requiring independent replication
-
-**Mechanistic gate:** failed
-
-**Mechanistic localization:** intentionally not pursued under the pre-specified
-stopping rule
-
-**Causal mechanism:** not established
+- measurement-interface validation;
+- AB/BA label-order counterbalancing;
+- separation of exploratory and confirmatory analyses;
+- newly constructed held-out stimulus banks;
+- prior-data contamination audits;
+- factual source verification;
+- frozen stimulus sets;
+- cryptographic dataset fingerprints;
+- preregistered hypotheses;
+- pre-specified success criteria;
+- bootstrap uncertainty estimation;
+- item-level robustness analysis;
+- semantic-domain robustness analysis;
+- explicit stopping rules;
+- retention of null results.
 
 ---
 
-## Research Areas
+## What this project supports
 
-- Mechanistic interpretability
-- Sociolinguistics
-- Linguistic indexicality
-- Register and relational construal
-- Large language models
-- AI safety
-- Epistemic deference
-- Behavioral replication
-- Reproducibility
+The project supports a methodological conclusion:
+
+**linguistically plausible LLM effects that look strong in pilots or
+exploratory subsets may disappear under independent replication.**
+
+It also identifies an unresolved empirical question:
+
+**why did functional-role wording reduce agreement with true claims in
+the final focused dataset?**
+
+That truth-dependent effect is a candidate for a future independent study.
+
+It is not treated as confirmed here.
+
+---
+
+## What this project does not claim
+
+This repository does not claim that:
+
+- formal register reliably induces epistemic deference;
+- technical vocabulary explains the apparent pilot effect;
+- role-relational framing reliably increases false-claim agreement;
+- `functions as` reliably increases false-claim agreement;
+- the secondary truth-dependent interaction is independently replicated;
+- a causal internal mechanism has been localized.
+
+Those claims are not supported by the completed evidence sequence.
+
+---
+
+## Repository guide
+
+### Research documentation
+
+Key documents in `docs/` include:
+
+- `hypotheses.md` — hypothesis development;
+- `dataset_design.md` — experimental-data design;
+- `behavioral_phenotyping.md` — exploratory linguistic coding;
+- `heldout_role_relational_replication_preregistration.md` — held-out replication protocol;
+- `functions_as_focused_replication_preregistration.md` — focused final preregistration;
+- `register_realization_coding_manual.md` — linguistic annotation definitions;
+- `experiment_log.md` — chronological research record;
+- `results_and_lessons.md` — consolidated interpretation;
+- `project_architecture.md` — project structure and workflow.
+
+### Data
+
+`data/` contains stimulus banks, validation material, linguistic coding,
+and frozen held-out materials.
+
+`data/functions_as_focused/` contains the final 30-family focused
+replication bank together with its provenance and audit material.
+
+### Results
+
+`results/confirmatory/` contains broad confirmatory outputs.
+
+`results/phenotyping/` contains exploratory linguistic phenotyping
+outputs.
+
+`results/functions_as_focused/` contains the final preregistered focused
+replication outputs.
+
+### Computational notebooks
+
+The computational workflow is preserved in numbered notebooks:
+
+- `00_environment_and_sanity_check.ipynb`
+- `01_behavioral_pilot.ipynb`
+- `02_stimulus_validation_materials.ipynb`
+- `03_stimulus_validation_analysis.ipynb`
+- `04_confirmatory_stimulus_bank.ipynb`
+- `05_confirmatory_validation_materials.ipynb`
+- `06_confirmatory_behavior.ipynb`
+
+The notebooks are retained in research order rather than being rewritten
+after the final result.
+
+---
+
+## Study history
+
+| Stage | Status |
+| --- | --- |
+| Exploratory pilot | Apparent positive effect |
+| Measurement audit | Interface corrected; pilot signal survived |
+| Broad generic-formality replication | Not supported |
+| Technical-lexicality explanation | Not supported |
+| Exploratory role-relational candidate | Identified |
+| Held-out role-relational replication | Not supported |
+| Exploratory `functions as` candidate | Identified |
+| Focused preregistered replication | Primary hypothesis not supported |
+| Secondary truth-dependent interaction | Observed; requires independent replication |
+| Mechanistic localization | Intentionally not pursued |
+
+---
+
+## Future work
+
+A clean follow-up should not reinterpret the failed primary hypotheses as
+successful.
+
+The most defensible next study would independently test the unexpected
+truth-dependent effect using:
+
+- new factual families;
+- a preregistered directional hypothesis;
+- multiple functional-role constructions;
+- multiple model families;
+- matched controls;
+- the same measurement-interface safeguards.
+
+Only if such a behavioral effect replicates robustly should mechanistic
+localization become the primary next step.
+
+---
+
+## Research areas
+
+- mechanistic interpretability;
+- behavioral evaluation;
+- sociolinguistics;
+- linguistic indexicality;
+- register and relational construal;
+- epistemic judgment;
+- large language models;
+- AI safety;
+- reproducibility.
 
 ---
 
@@ -546,5 +641,21 @@ stopping rule
 
 **Irene Theodoropoulou**
 
-Linguist working at the intersection of sociolinguistics, language variation,
-discourse, and artificial intelligence.
+Linguist working at the intersection of sociolinguistics, language
+variation, discourse, and artificial intelligence.
+
+---
+
+## Bottom line
+
+The project began with an apparently large sociolinguistic effect on model
+epistemic judgment.
+
+The effect became weaker and ultimately failed as the experimental
+evidence became more independent and more tightly controlled.
+
+Rather than localizing a mechanism anyway, the study obeyed its
+pre-specified evidence gate and stopped.
+
+For mechanistic interpretability, knowing when **not** to explain a
+behavior is part of the research.
